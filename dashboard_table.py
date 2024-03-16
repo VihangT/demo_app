@@ -10,8 +10,8 @@ def relabel_idx(col_name):
 def table_style(styler):
 	styler.map_index(relabel_idx,axis ="columns")
 	styler.set_table_styles([
-		dict(selector = 'th',props=[('font-size','0.5in')]),
-		dict(selector = 'td',props=[('font-size', '0.5in')])
+		dict(selector = 'th',props=[('font-size','0.75in')]),
+		dict(selector = 'td',props=[('font-size', '0.75in')])
 	])
 	#styler.hide(subset = ["grand_total"],axis = 1)
 	styler.format(precision = 2)
