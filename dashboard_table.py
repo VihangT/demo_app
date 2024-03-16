@@ -1,12 +1,7 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-import matplotlib
 from datetime import datetime as dt
 from datetime import timedelta as td
-from urllib.parse import quote
-import cv2
 from time import sleep
 number_of_raws = 20
 def relabel_idx(col_name):
