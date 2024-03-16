@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime as dt
 from datetime import timedelta as td
 from time import sleep
-number_of_raws = 20
+number_of_raws = 5
 def relabel_idx(col_name):
 	return 'background-color: blue;'
 
@@ -31,7 +31,7 @@ if df_shape[0] > 0:
 	no_of_slide1 = no_of_slide1 + df_shape[0]//number_of_raws
 #print(df1.iloc[10:16])
 
-st.subheader("Scheduled Job cards",divider='rainbow')
+st.subheader("SAMPLE TABLE",divider='rainbow')
 with st.empty():
 	for no_of_time in range(no_of_slide1):
 		st.table(df.iloc[no_of_time*number_of_raws:number_of_raws+(no_of_time*number_of_raws)].style.pipe(table_style))
